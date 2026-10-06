@@ -1,0 +1,18 @@
+{
+  "name": "takabazar-credits-platform",
+  "version": "12.13.0",
+  "private": true,
+  "description": "TakaBazar V12.13 consent-based login location and fixed game platform",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}
