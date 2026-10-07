@@ -2,14 +2,14 @@
   "name": "takabazar-credits-platform",
   "version": "12.13.0",
   "private": true,
-  "description": "TakaBazar V12.13 consent-based login location and fixed game platform",
+  "description": "TakaBazar V12.13 Platform",
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node --experimental-sqlite server.js"
   },
   "engines": {
-    "node": "24.21.0"
+    "node": ">=22.5.0"
   },
   "dependencies": {
     "express": "^4.19.2",
