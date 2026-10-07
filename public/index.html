@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TakaBazar V12.13</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>TakaBazar V12.13 Platform</h1>
+        <div id="game-container"></div>
+
+        <div class="card">
+            <h2>উত্তোলন ফরম (Withdrawal)</h2>
+            <form id="withdrawForm" onsubmit="handleWithdrawalSubmit(event, this)">
+                <input type="hidden" name="userId" value="1" />
+                
+                <div class="form-group">
+                    <label>পরিমাণ:</label>
+                    <input type="number" name="amount" required placeholder="0.00" />
+                </div>
+
+                <div class="form-group">
+                    <label>পেমেন্ট পদ্ধতি:</label>
+                    <select name="method">
+                        <option value="bKash">bKash</option>
+                        <option value="Nagad">Nagad</option>
+                        <option value="Rocket">Rocket</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>একাউন্ট নম্বর:</label>
+                    <input type="text" name="accountNo" required placeholder="017xxxxxxxx" />
+                </div>
+
+                <div class="form-group">
+                    <label>প্রমাণ ছবি (Attachment):</label>
+                    <input type="file" name="attachment" accept="image/*,.pdf" />
+                </div>
+
+                <div class="form-group">
+                    <label>নোট:</label>
+                    <textarea name="note" placeholder="নোট লিখুন"></textarea>
+                </div>
+
+                <button type="submit">Withdraw Request</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="sdk/takabazar-game-sdk.js"></script>
+    <script src="sdk/takabazar-auto-bridge.js"></script>
+</body>
+</html>
