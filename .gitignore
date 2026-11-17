@@ -1,6 +1,0 @@
-node_modules/
-data/*.sqlite
-data/*.sqlite-journal
-data/game-assets/*
-public/uploads/*
-.env
